@@ -2,9 +2,9 @@ import os
 import logging
 import requests
 import pandas as pd
-from config.settings import QBO_ACCESS_TOKEN, QBO_REALM_ID, QBO_BASE_URL
-from utils.api_qbo import refresh_access_token, update_env_file
-from config.logging import logger
+from settings import QBO_ACCESS_TOKEN, QBO_REALM_ID, QBO_BASE_URL
+from api_qbo import refresh_access_token, update_env_file
+from logging import logger
 
 
 # ---------------------- QBO Fetch Logic ----------------------

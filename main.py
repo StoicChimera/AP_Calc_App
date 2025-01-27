@@ -1,9 +1,9 @@
 import logging
 import os
 import pandas as pd
-from utils.api_share import download_file_from_sharepoint, upload_file_to_sharepoint
+from api_share import download_file_from_sharepoint, upload_file_to_sharepoint
 from AP_Calc import validate_and_process_report, filter_and_recommend, save_recommendations
-from config.logging import logger
+from logging import logger
 
 # File paths
 REMOTE_INPUT_FILE = os.getenv("SHAREPOINT_REMOTE_INPUT_FILE")
